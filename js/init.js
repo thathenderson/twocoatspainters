@@ -3,18 +3,18 @@
 /* =  PRELOADER
 /*-------------------------------------------------*/
 
-$(window).load(function() { 
-  $("#preloader").fadeOut("slow"); 
+$(window).load(function() {
+  $("#preloader").fadeOut("slow");
 });
 
 /*-------------------------------------------------*/
 /* =  NICE SCROLL
 /*-------------------------------------------------*/
 
-// $("html").niceScroll();  
+// $("html").niceScroll();
 
 $(document).ready( function () {
-    
+
 
   /*-------------------------------------------------*/
   /* =  INIT WATERMARK
@@ -53,7 +53,7 @@ $(document).ready( function () {
   //detect window resize
   $(window).on('resize', function() {
     var window_height = $(window).height() - 63;
-    
+
     $('#subheader, #subheader #video').css('height', window_height  );
   }).trigger('resize');
 
@@ -83,11 +83,11 @@ $(document).ready( function () {
       clearTimeout(tOut);
    tOut = setTimeout(rsizeItems, milSec);
   });
-  function rsizeItems() { 
+  function rsizeItems() {
       //put code inside this function
   }
 
-  
+
 
   /*-------------------------------------------------*/
   /* =  CONTACT FORM
@@ -98,7 +98,7 @@ $(document).ready( function () {
   var word = ['one', 'two', 'three', 'four', 'five'];
   var rand = (Math.floor(Math.random() * 4));
   var correct = word[rand];
-   
+
    $('#test span').html(correct);
    $('input[name=rand]').click(function() {
       $('input[name=rand]').parent().removeClass('active1');
@@ -160,7 +160,7 @@ $(document).ready( function () {
                 $('.element p').remove();
             }
         }
-    }); 
+    });
 
     /*-------------------------------------------------*/
     /* =  ADDS MOBILE BROWSER CLASS TO HTML TAG
@@ -197,7 +197,7 @@ $(document).ready( function () {
       // coefficient for "auto" speed
       autoCoefficent: 2,
       // $.fn.smoothScroll only: whether to prevent the default click action
-      preventDefault: true      
+      preventDefault: true
     });
 
     $("#doctors #team .doct").click(function(e){
@@ -225,7 +225,7 @@ $(document).ready( function () {
     /*-------------------------------------------------*/
     /* =  DEPARTMENTS ELEMENTS ANIMATE
     /*-------------------------------------------------*/
-    
+
     $('#departments').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
       if (isInView) {
         $(this).addClass('active');
@@ -239,7 +239,7 @@ $(document).ready( function () {
     /* =  ANIMATE NUMBERS
     /*-------------------------------------------------*/
 
-    $('.numbers').one('inview', function(event, isInView, visiblePartX, visiblePartY){ 
+    $('.numbers').one('inview', function(event, isInView, visiblePartX, visiblePartY){
       $('#lines1').animateNumber({ number: 5923},2000);
 
       $('#lines2').animateNumber({ number: 103 },2000);
@@ -273,40 +273,33 @@ $(document).ready( function () {
       img.replaceWith(div);
       $(div).addClass('browse-images')
     });
+
+
     /*-------------------------------------------------*/
     /* =  ABOUT SLIDER
     /*-------------------------------------------------*/
 
-
-    var owl = $("#about-slider");
-
-    owl.owlCarousel({
-      center: true, 
-      loop:true,
-      touchDrag:true,
-      startPosition: 1,
-      itemClass: 'owl-item',
-      activeClass:  false,
-      navigation : true,
-      autoplay:true,
-      smartSpeed:250,
-
-      responsive : {
-        // breakpoint from 0 up
-        0 : {
-            items:1,
-        },
-        // breakpoint from 480 up
-        // 480 : {
-        //     items:2,
-        // },
-        // breakpoint from 768 up
-        768 : {
-            items:3,
-        }
+  $("#about-slider").owlCarousel({
+    center: true,
+    loop:true,
+    touchDrag:true,
+    startPosition: 1,
+    itemClass: "owl-item",
+    activeClass:  false,
+    navigation : true,
+    autoplay:true,
+    smartSpeed:250,
+    responsive: {
+      // breakpoint from 0 up
+      0: { items:1 },
+      // breakpoint from 480 up
+      // 480 : {
+      //     items:2,
+      // },
+      // breakpoint from 768 up
+      768: { items:3 }
     }
-       
-    });
+  });
 
 
     /*-------------------------------------------------*/
@@ -314,7 +307,7 @@ $(document).ready( function () {
     /*-------------------------------------------------*/
 
     $( "#date" ).datepicker();
- 
+
     /*-------------------------------------------------*/
     /* =  DESCRIPTION SLIDER
     /*-------------------------------------------------*/
@@ -372,9 +365,9 @@ $(document).ready( function () {
       onMixStart: null,
       onMixEnd: null
 
-    }); 
-    
-    $(' .da-thumbs .mix ').each( function() { $(this).hoverdir(); 
+    });
+
+    $(' .da-thumbs .mix ').each( function() { $(this).hoverdir();
 
     });
 
@@ -425,7 +418,7 @@ $(document).ready( function () {
     /*-------------------------------------------------*/
     /* =  SHOW END HIDE ADDRESS
     /*-------------------------------------------------*/
-    
+
     // $(".place").hover(function () {
     //     $(".show").toggleClass("active");
     //  });
@@ -441,7 +434,7 @@ $(document).ready( function () {
     /*-------------------------------------------------*/
 
     $('#departments,#description,#hippocrate').parallax({
-      speed : 0.15 
+      speed : 0.15
     });
 
 
@@ -457,4 +450,3 @@ $(document).ready( function () {
     });
 
 });
-
