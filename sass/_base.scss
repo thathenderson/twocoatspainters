@@ -12,7 +12,7 @@
 //SETTING UP MAIN ELEMENTS
 html {
     overflow-x:hidden!important;
-    overflow-y:auto!important; 
+    overflow-y:auto!important;
 }
 
 body {
@@ -23,34 +23,34 @@ body {
     -webkit-font-smoothing: antialiased;
     min-width: $page-width;
     #preloader {
-        position: fixed; 
+        position: fixed;
         left: 0px;
         top: 0px;
         width: 100%;
         height: 100%;
         z-index: 9999999999;
         background: url('../images/preloader.gif') 50% 50% no-repeat #fff;
-    }      
+    }
     // * {
     //     -webkit-backface-visibility:hidden; /* Chrome and Safari */
     // }
     &.veterinary {
         #preloader {
             background: url('../images/preloader1.gif') 50% 50% no-repeat #fff;
-        } 
-        
+        }
+
     }
-    &.pharm { 
+    &.pharm {
         #preloader {
             background: url('../images/preloader2.gif') 50% 50% no-repeat #fff;
-        } 
-        
+        }
+
     }
     &.dental {
         #preloader {
             background: url('../images/preloader3.gif') 50% 50% no-repeat #fff;
-        } 
-        
+        }
+
     }
 }
 
@@ -87,7 +87,7 @@ h6 {
 
 a {
     outline: none;  /* removing outline in Mozilla */
-    @include transition(all .2s ease);
+    @include t(all .2s ease);
     text-decoration: none;
     color: $link-clr;
     &:active {
@@ -123,7 +123,7 @@ strong {
 
 //CLEARING FLOAT (always extend .clearfix class)
 .clearfix {
-    @include pie-clearfix;
+  @include pie-clearfix;
 }
 
 //SELECTED TEXT
@@ -174,4 +174,4 @@ input[type="submit"]::-moz-focus-inner {
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
-} 
+}

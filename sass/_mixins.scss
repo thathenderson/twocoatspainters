@@ -52,7 +52,7 @@
 
     &:after {
         clear: both;
-    }    
+    }
 }
 
 @mixin box($var) {
@@ -61,16 +61,26 @@
     display: block;
 }
 @mixin t($var) {
-    @include transition(all $var ease);
+    transition: all $var ease;
+    -webkit-transition: all $var ease;
 }
 @mixin nt {
-    @include transition(none);
+  transition: none;
+  -webkit-transition: none;
 }
 
 @mixin pie($rad) {
     behavior: url("../PIE.htc");
     position: relative;
-    @include border-radius($rad);
+    border-radius: $rad;
+}
+
+@mixin pie-clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin cover {
@@ -86,22 +96,22 @@
 @mixin bdr { border-right: 1px solid $border; }
 
 @mixin radius {
-    @include border-radius($radius);
+    border-radius: $radius;
     @include background-clip();
 }
 
 @mixin circle {
-    @include border-radius(50%);
+    border-radius: 50%;
     @include background-clip();
 }
 
 @mixin curve($rad) {
-    @include border-radius($rad);
-    @include background-clip();    
+    border-radius: $rad;
+    @include background-clip();
 }
 
 @mixin borders {
-    @include border-radius($radius);
+    border-radius: $radius;
     @include background-clip();
     border: 1px solid $border;
 }
@@ -141,7 +151,7 @@
     /* hack for ie8 */
     opacity: 1\9;
     visibility: visible\9;
-    display: none\9;    
+    display: none\9;
 }
 @mixin fadein {
     visibility: visible;
@@ -180,7 +190,7 @@
 /* BOX SIZING */
 @mixin box-sizing($bs) {
   $bs: unquote($bs);
-  @include experimental(box-sizing, $bs, -moz, -webkit, not -o, not -ms, not -khtml, official); 
+  @include experimental(box-sizing, $bs, -moz, -webkit, not -o, not -ms, not -khtml, official);
 }
 @mixin bs {
     @include box-sizing(border-box);
@@ -201,5 +211,3 @@
 // $departments-layout: horizontal; //vertical is default, smart(third option)
 // @import "departments/*.png";
 // @include all-departments-sprites(true);
-
-
