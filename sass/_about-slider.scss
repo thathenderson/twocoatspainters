@@ -8,7 +8,7 @@
 
 #about {
 
-	/* 
+	/*
 	 *  Owl Carousel - Animate Plugin
 	 */
 	.owl-carousel .animated {
@@ -47,7 +47,7 @@
 	  }
 	}
 
-	/* 
+	/*
 	 *  Owl Carousel - Auto Height Plugin
 	 */
 	.owl-height {
@@ -58,7 +58,7 @@
 	  transition: height 500ms ease-in-out;
 	}
 
-	/* 
+	/*
 	 *  Core Owl Carousel CSS File
 	 */
 	.owl-carousel {
@@ -149,7 +149,7 @@
 				span {
 					color: #b8b8cf;
 					@include t(.3s);
-					
+
 				}
 				&:hover {
 					@include pie(50%);
@@ -174,41 +174,16 @@
 				padding: 0 20%;
 				display: block;
 				text-align: center;
-				 
+
 			}
 			p {
 				@include fadeout;
 				@include nt;
 				margin-bottom: 0;
 			}
-			
+
 		}
 
-	 	.about-icon1 {
-			span {
-				margin-top: 18px;
-				font-size: 71px;
-			}
-		}
-		.about-icon2 {
-			span {
-				margin-top: 24px;
-				font-size: 43px;
-			}
-		}
-		.about-icon3 {
-			span {
-				margin-top: 20px;
-				font-size:56px;
-			}
-		}
-		// // h4 {
-		// // 	color: $main-clr;
-		// // 	display: block;
-		// // 	text-align: center;
-		// // 	margin-bottom: 0; 
-			
-		// // }
 		&.center {
 			.item {
 				div {
@@ -216,7 +191,7 @@
 					background-color: $main-clr;
 					@include box(130px);
 					border: none;
-					top: 0;
+					// top: 0;
 					span {
 						color: #fff!important;
 					}
@@ -229,25 +204,7 @@
 					display: block;
 					text-align: center;
 					margin-bottom: 0;
-					
-				}
-				.about-icon1 {
-					span {
-						margin-top: 26px;
-						font-size: 93px;
-					}
-				}
-				.about-icon2 {
-					span {
-						margin-top: 38px;
-						font-size: 53px;
-					}
-				}
-				.about-icon3 {
-					span {
-						margin-top: 26px;
-						font-size:76px;
-					}
+
 				}
 			}
 			p {
@@ -263,102 +220,30 @@
 				line-height:1.5 ;
 			}
 		}
-		.about-icon1:hover {
-			span {
-				margin-top: 26px;
-				font-size: 93px;
-			}
-		}
-		.about-icon2:hover {
-			span {
-				margin-top: 38px;
-				font-size: 53px;
-			}
-		}
-		.about-icon3:hover {
-			span {
-				margin-top: 26px;
-				font-size:76px;
-			}
-		}
-	}
-	.owl-grab {
-
 	}
 }
 
+.owl-carousel .owl-item {
+  .icon {
+    font-size: 40px;
+  }
 
-.veterinary {
-    #about {
-    	.owl-carousel .owl-item {
-    		.item {
-	    		div {
-					&:hover {
-						background-color: #3fb094;
-					}
-	    		}
-    			
-    		}
-	    	&.center {
-				.item { 
-					div {
-						background-color: #3fb094;
-					}
-	    			h4 {
-	    				color: #3fb094;
-	    			}
-				}
-			}
-		}
-    }
-}
+  .about-icon__our-values {
+    padding-top: 28px;
+  }
 
-.dental {
-    #about {
-    	.owl-carousel .owl-item {
-    		.item {
-	    		div {
-					&:hover {
-						background-color: #4460a7;
-					}
-	    		}
-    			
-    		}
-	    	&.center {
-				.item { 
-					div {
-						background-color: #4460a7;
-					}
-	    			h4 {
-	    				color: #4460a7;
-	    			}
-				}
-			}
-		}
-    }
-}
+  .about-icon__our-vision {
+    padding-top: 25px;
+  }
 
-.pharm {
-    #about {
-    	.owl-carousel .owl-item {
-    		.item {
-	    		div {
-					&:hover {
-						background-color: #00a1b2;
-					}
-	    		}
-    			
-    		}
-	    	&.center {
-				.item { 
-					div {
-						background-color: #00a1b2;
-					}
-	    			h4 {
-	    				color: #00a1b2;
-	    			}
-				}
-			}
-		}
-    }
+  .about-icon__our-goal {
+    padding-top: 30px;
+  }
+
+  &.center {
+    .icon { font-size: 60px; }
+    .about-icon__our-values { padding-top: 35px; }
+    .about-icon__our-vision { padding-top: 33px; }
+    .about-icon__our-goal { padding-top: 32px; }
+  }
 }
