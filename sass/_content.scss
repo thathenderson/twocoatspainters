@@ -6,13 +6,13 @@
 
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   validation popup
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 
@@ -75,19 +75,19 @@
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   scroll to top
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
- 
+
 
 #top {
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
 	background-image: url("../images/slider1/arrow2.png");
 	background-color: rgba(0, 0, 0, 0.2);
 	background-position: 50% 50%;
@@ -97,7 +97,7 @@
     position: fixed;
     right: 30px;
     @include t(.4s);
-    border-radius: 5px; 
+    border-radius: 5px;
     z-index: 99;
     @include box(45px);
     transform:rotate(-90deg);
@@ -112,13 +112,13 @@
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   #video section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 
@@ -131,7 +131,7 @@
 	@include cover;
 	width: 100%;
 	position: relative;
-	.mbYTP_wrapper { 
+	.mbYTP_wrapper {
 		opacity: 1!important;
 		&.active {
 			opacity: 0!important;
@@ -150,9 +150,9 @@
 			background-color: #f85800;
 			@include pie(5px);
 			padding: 0 20px;
-			font-weight: 700;  
+			font-weight: 700;
 			display: inline-block;
-			vertical-align: top; 
+			vertical-align: top;
 
 		}
 	}
@@ -163,9 +163,9 @@
 			color: #fff;
 			background-color: #f85800;
 			@include pie(5px);
-			border: none; 
-			margin: 0 10px; 
-			vertical-align: top; 
+			border: none;
+			margin: 0 10px;
+			vertical-align: top;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 		}
@@ -180,13 +180,13 @@
 
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   #subheader section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #subheader {
@@ -200,7 +200,7 @@
 		position: relative;
 	    &:before {
 	        position: absolute;
-	        content: ""; 
+	        content: "";
 	        width: 100%;
 	        height: 100%;
 	        background-image: url('../images/texture.png');
@@ -209,12 +209,12 @@
 	        display: block;
 	        z-index: 9;
 	        background-color: rgba(144,178,227,.1);
-	    } 
+	    }
 	    h2,a {
 	    	position: relative;
 	    	z-index: 10;
 	    }
-		
+
 	}
 
 	width: 100%;
@@ -236,9 +236,9 @@
 			background-color: #f85800;
 			@include pie(5px);
 			padding: 0 20px;
-			font-weight: 700;  
+			font-weight: 700;
 			display: inline-block;
-			vertical-align: top; 
+			vertical-align: top;
 
 		}
 	}
@@ -246,19 +246,19 @@
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   about section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #about {
-	padding:65px 0 ; 
+	padding:65px 0 ;
 	margin-top: 30px;
-	
+
 	article {
 		text-align: center;
 	}
@@ -268,7 +268,7 @@
 		position: relative;
 		text-align: center;
 		font-weight: 500;
-		
+
 		&:after {
 			position: absolute;
 			content: "";
@@ -280,23 +280,23 @@
 			background-color: $second-clr;
 		}
 	}
-} 
+}
 
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   doctors section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #doctors {
 	background-color: $bg-clr-elements;
 	padding: 100px 0 70px;
-	
+
 		h1 {
 			margin-bottom: 100px;
 			color: $second-clr;
@@ -347,7 +347,7 @@
 				}
 			}
 			&.active {
-				@include fadein;	
+				@include fadein;
 				position: relative;
 				top: 0;
 				left: 0;
@@ -355,20 +355,20 @@
 				@include transition(all .4s ease-out .5s);
 
 			}
-			div:nth-child(2) { 
+			div:nth-child(2) {
 				float: left;
 				width: 540px;
 				height: 100%;
 				background-color: #fff;
 				text-align: center;
-				
+
 				h6 {
 					margin-top: 24px;
 					margin-bottom: 24px;
 					color: $second-clr;
 					position: relative;
 					text-align: center;
-					
+
 					&:after {
 						position: absolute;
 						content: "";
@@ -392,13 +392,13 @@
 				width: 537px;
 				height: 100%;
 				display: block;
-				
-				li {
+
+				> ul > li {
 					padding: 15px 0;
-					
+
 				}
-				li+li {
-					border-top:2px solid #dadae6; 
+				> ul > li+li {
+					border-top:2px solid #dadae6;
 				}
 				h6 {
 					font-size: 16px;
@@ -408,8 +408,13 @@
 					width: 205px;
 					vertical-align: top;
 					margin-bottom: 0;
-					
+
 				}
+        .h6-subtext {
+          color: $subtext-clr;
+          font-size: 14px;
+          margin: 5px 0;
+        }
 				p {
 					display: inline-block;
 					line-height: 1.5;
@@ -420,7 +425,7 @@
 					vertical-align: top;
 
 				}
-				li:last-child {
+				> ul > li:last-child {
 					overflow: hidden;
 					text-align: left;
 					padding-bottom: 0;
@@ -428,7 +433,7 @@
 					span {
 						display: block;
 						margin-top: 5px;
-						
+
 					}
 					img {
 						display: inline-block;
@@ -438,11 +443,11 @@
 						margin-left: 15px;
 						display: inline-block;
 						margin-top: 4px;
-						
+
 					}
 					.info {
 						background-color: transparent;
-						width:auto; 
+						width:auto;
 						display: inline-block;
 						text-align:left;
 						margin-bottom: 0;
@@ -465,7 +470,7 @@
 			}
 		}
 	}
-	
+
 	#team {
 		.id {
 			position: absolute;
@@ -485,7 +490,7 @@
 			position: relative;
 			text-align: center;
 			font-weight: 500;
-			
+
 			&:after {
 				position: absolute;
 				content: "";
@@ -534,7 +539,7 @@
 				background-position: 50% 50%;
 				background-repeat: no-repeat;
 			}
-			
+
 		}
 		li {
 			display: inline-block;
@@ -550,14 +555,14 @@
 				.doct {
 					&:before {
 						top: 0;
-						
+
 					}
 				}
 				.id {
 					bottom: 7px;
 					left: 0;
-					
-					
+
+
 				}
 			}
 		}
@@ -566,31 +571,31 @@
 		// }
 		li:nth-child(4n+1) {
 			margin-left: 0;
-			
+
 		}
-		
+
 	}
-} 
+}
 
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   appoitment section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
- 
+
 #appoitment {
 	width: 100%;
 	background-color: $main-clr;
 	padding: 60px 0;
-	
+
 	h3 {
 		display: inline-block;
-		vertical-align: top; 
+		vertical-align: top;
 		margin-bottom: 0;
 		font-weight: 500;
 		margin-top: 10px;
@@ -602,28 +607,28 @@
 			vertical-align: top;
 			font-weight: 700;
 			line-height: 47px;
-			
+
 			&:hover {
 				background-color: #fff;
 				color: $main-clr;
 			}
 		}
-	} 
+	}
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   departments section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #departments {
 	width: 100%;
-	padding: 100px 0; 
+	padding: 100px 0;
 	background: url('http://placehold.it/1921x1290') 50% 0 no-repeat fixed;
 	@include cover;
 	height: auto;
@@ -633,7 +638,7 @@
 	// position: relative;
 	// &:after {
 	// 	position: absolute;
-	// 	content: ""; 
+	// 	content: "";
 	// 	width: 100%;
 	// 	height: 100%;
 	// 	background-image: url('../images/texture.png');
@@ -665,7 +670,7 @@
 		article:first-child{
 			left: 0;
 			@include fadein;
-					
+
 		}
 
 		article:nth-child(2) {
@@ -675,90 +680,90 @@
 		li:nth-child(1){
 			article:first-child{
 			@include transition(all .3s ease-out );
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear );
-				
+
 			}
-			
+
 		}
 		li:nth-child(2){
 			article:first-child{
 			@include transition(all .3s linear 0.5s);
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear 0.5s);
-				
+
 			}
 		}
 		li:nth-child(3){
 			article:first-child{
 			@include transition(all .3s linear 1s);
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear 1s);
-				
+
 			}
 		}
 		li:nth-child(4){
 			article:first-child{
 			@include transition(all .3s linear 1.5s);
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear 1.5s);
-				
+
 			}
 		}
 		li:nth-child(5){
 			article:first-child{
 			@include transition(all .3s linear 2s);
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear 2s);
-				
+
 			}
 		}
 		li:nth-child(6){
 			article:first-child{
 			@include transition(all .3s linear 2.5s);
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear 2.5s);
-				
+
 			}
 		}
 		li:nth-child(7){
 			article:first-child{
 			@include transition(all .3s linear 3s);
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear 3s);
-				
+
 			}
 		}
 		li:nth-child(8){
 			article:first-child{
 			@include transition(all .3s linear 3.5s);
-				
+
 			}
 
 			article:nth-child(2) {
 			@include transition(all .3s linear 3.5s);
-				
+
 			}
 		}
 	}
@@ -767,7 +772,7 @@
 		height: auto;
 		article {
 			display: inline-block;
-			width: 50%; 
+			width: 50%;
 			@include bs;
 			position: relative;
 			vertical-align: top;
@@ -776,7 +781,7 @@
 
 		}
 		.tx{
-			overflow: hidden; 
+			overflow: hidden;
 		}
 		h5 {
 			margin-bottom: 18px;
@@ -784,7 +789,7 @@
 		}
 		p {
 			margin-bottom: 0;
-			
+
 		}
 		h6.more-btn {
 			margin-top: 10px;
@@ -854,10 +859,10 @@
 			padding-right: 130px;
 			position: relative;
 			left: -20%;
-			
+
 			div.more-btn {
 				right: 20px;
-				
+
 			}
 		}
 		article:nth-child(2) {
@@ -865,28 +870,28 @@
 			padding-left: 130px;
 			position: relative;
 			right: -20%;
-			
+
 			div.more-btn {
 				left: 20px;
-				
+
 			}
-			
+
 		}
 	}
 	li+li {
 		margin-top: 70px;
-		
+
 	}
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   pricing section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #pricing {
@@ -928,7 +933,7 @@
 		p,h4,small,a {
 			margin-bottom: 0;
 			font-weight:500;
-			
+
 		}
 		p {
 			text-transform:uppercase;
@@ -937,10 +942,10 @@
 		ul {
 			@include radius;
 			overflow: hidden;
-		} 
+		}
 		li {
 			padding: 15px 0;
-			
+
 			h4 {
 				color: $second-clr;
 			}
@@ -950,14 +955,14 @@
 		}
 		li:nth-child(1) {
 			padding: 25px 0;
-			
+
 			h4 {
 				color: #fff;
 			}
 		}
 		li:last-child {
 			padding: 23px 0;
-			
+
 			a {
 				color: #fff;
 				border:2px solid #fff;
@@ -968,13 +973,13 @@
 				&:hover {
 					background-color: #fff;
 				}
-				
+
 			}
 		}
 	}
 	article + article {
 		margin-left: 10px;
-		
+
 	}
 	article:nth-child(2) {
 		li:first-child,li:last-child {
@@ -1002,7 +1007,7 @@
 		margin: 0 -14px;
 		&:hover {
 			top: -5px;
-			
+
 		}
 		&:before  {
 			position: absolute;
@@ -1014,8 +1019,8 @@
 			background-image: url('../images/pricing.png');
 			display: block;
 			z-index: 0;
-			border-radius: 4px 0 0 4px; 
-		} 
+			border-radius: 4px 0 0 4px;
+		}
 		&:after  {
 			position: absolute;
 			content: "";
@@ -1026,11 +1031,11 @@
 			background-image: url('../images/pricing.png');
 			display: block;
 			z-index: 0;
-			border-radius:0 4px 4px 0; 
-		} 
+			border-radius:0 4px 4px 0;
+		}
 		li {
 			padding: 18px 0;
-			
+
 		}
 		li:first-child {
 			padding: 25px 0 10px;
@@ -1042,7 +1047,7 @@
 		}
 		li:last-child {
 			padding: 27px 0;
-			
+
 		}
 		li:nth-child(2) {
 			h4,small {
@@ -1052,10 +1057,10 @@
 		a:hover {
 			color: $fifth-clr;
 		}
-		
+
 	}
 	article:nth-child(5) {
-		
+
 		li:first-child,li:last-child {
 			background-color:#0080b3;
 			color: #fff ;
@@ -1067,13 +1072,13 @@
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   clinic section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #clinic {
@@ -1130,7 +1135,7 @@
 			&:hover {
 				&:after {
 					top: 0;
-					
+
 				}
 			}
 		}
@@ -1149,21 +1154,21 @@
 			a {
 				display: block;
 			}
-		}		
+		}
 	}
 	.numbers {
 		width: 100%;
 		padding:50px 0;
-		background-color: $bg-clr-elements; 
+		background-color: $bg-clr-elements;
 		text-align: center;
-		
+
 		li {
 			display: inline-block;
 			width:255px ;
 			background-color: #fff;
 			@include radius;
 			padding: 40px 0;
-			
+
 		}
 		span {
 			font-size: 70px;
@@ -1172,7 +1177,7 @@
 			font-weight: 500;
 			margin-bottom: 0;
 			display: inline-block;
-			
+
 		}
 		p {
 			text-transform: uppercase;
@@ -1182,19 +1187,19 @@
 		}
 		li+li {
 			margin-left: 30px;
-			
+
 		}
 	}
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   description section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #description {
@@ -1216,7 +1221,7 @@
 		top: 0;
 		left: 0;
 		display: block;
-		
+
 	}
 	&:after {
 		position: absolute;
@@ -1236,7 +1241,7 @@
 		text-align: center;
 		font-weight: 500;
 		z-index: 2;
-		
+
 		&:after {
 			position: absolute;
 			content: "";
@@ -1248,17 +1253,17 @@
 			background-color: #fff;
 		}
 	}
-	
+
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   main-appointment section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #main-appoitment {
@@ -1311,7 +1316,7 @@
 		@include bs;
 		font-weight: 700;
 		margin-top: 30px;
-		
+
 	}
 	.date {
 		display: inline-block;
@@ -1320,7 +1325,7 @@
 			display: inline-block;
 			margin-right: 30px;
 			width: 100%;
-		} 
+		}
 		input {
 			display: inline-block;
 			width: 310px;
@@ -1328,20 +1333,20 @@
 		a {
 			display: inline-block;
 			margin-left: 26px;
-			
+
 		}
 	}
-	
+
 	.input {
 		label {
 			margin-left: 30px;
-			
+
 		}
 		label:nth-child(2n+1) {
 			margin-left: 0;
-			
+
 		}
-		
+
 	}
 	.btn1 {
 		border:2px solid $main-clr;
@@ -1385,7 +1390,7 @@
 				display: inline-block;
 				margin-top: -5px;
 				height: 21px;
-				
+
 			}
 		}
 
@@ -1415,7 +1420,7 @@
 				span {
 					color: #fff;
 				}
-			} 
+			}
 			&.active1 {
 	        	background-color: $main-clr;
 				span {
@@ -1425,7 +1430,7 @@
 		}
 		label+label {
 			margin-left: 9px;
-			
+
 		}
 		input {
 			display: none;
@@ -1439,13 +1444,13 @@
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   hippocrate section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #hippocrate {
@@ -1459,7 +1464,7 @@
 	position: relative;
 	&:before {
 		position: absolute;
-		content: ""; 
+		content: "";
 		width: 100%;
 		height: 100%;
 		background-image: url('../images/texture.png');
@@ -1472,12 +1477,12 @@
 		color: #fff;
 		position: relative;
 		text-align: center;
-		width: 860px; 
+		width: 860px;
 		font-weight: 500;
 		margin: 0 auto 80px;
 		text-transform: uppercase;
 		line-height: 1.5;
-		
+
 		&:after {
 			position: absolute;
 			content: "";
@@ -1499,13 +1504,13 @@
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   theme section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #theme {
@@ -1537,13 +1542,13 @@
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   map section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 
 #map {
@@ -1564,7 +1569,7 @@
 		position: absolute;
 		padding: 35px 0;
 		bottom: 0;
-		
+
 		h5 {
 			text-transform: uppercase;
 			margin-bottom: 0;
@@ -1583,7 +1588,7 @@
 			margin-bottom: 60px;
 			font-weight: 700;
 			@include radius;
-	
+
 		}
 		.show {
 			position: absolute;
@@ -1602,14 +1607,14 @@
 			}
 			li {
 				margin-bottom: 22px;
-				
+
 			}
 			li:last-child{
 				margin-bottom: 0;
 				p {
 					margin-bottom: 0;
-					
-				} 
+
+				}
 			}
 			p {
 				margin-bottom: 5px;
@@ -1622,7 +1627,7 @@
 				font-weight: 700px;
 				color: #585864;
 				margin-bottom: 5px;
-				
+
 			}
 		}
 	}
@@ -1661,7 +1666,7 @@
 			}
 		}
 	}
-	
+
 	#appoitment {
 		background-color: #3fb094!important;
 		.main-appoitment {
@@ -1690,10 +1695,10 @@
 				background-color: #3fb094;
 			}
 			li:last-child {
-				background-color: #3fb094;	
+				background-color: #3fb094;
 				a:hover {
-					color: #3fb094;	
-				}			
+					color: #3fb094;
+				}
 			}
 		}
 		article:nth-child(3) {
@@ -1766,7 +1771,7 @@
 			p {
 				.number {
 					color: #3fb094!important;
-					
+
 				}
 			}
 			.numbers:hover  {
@@ -1795,7 +1800,7 @@
 		background-color: rgba(63,176,148,.75);
 	}
 	#map {
-		article { 
+		article {
 			background-color: rgba(63,176,148,.85);
 
 		}
@@ -1833,7 +1838,7 @@
 			}
 		}
 	}
-	
+
 	#appoitment {
 		background-color: #4460a7!important;
 		.main-appoitment {
@@ -1862,10 +1867,10 @@
 				background-color: #4460a7;
 			}
 			li:last-child {
-				background-color: #4460a7;	
+				background-color: #4460a7;
 				a:hover {
-					color: #4460a7;	
-				}			
+					color: #4460a7;
+				}
 			}
 		}
 		article:nth-child(3) {
@@ -1938,7 +1943,7 @@
 			p {
 				.number {
 					color: #4460a7!important;
-					
+
 				}
 			}
 			.numbers:hover  {
@@ -1967,7 +1972,7 @@
 		background-color: rgba(68,96,167,.75);
 	}
 	#map {
-		article { 
+		article {
 			background-color: rgba(68,96,167,.85);
 
 		}
@@ -2005,7 +2010,7 @@
 			}
 		}
 	}
-	
+
 	#appoitment {
 		background-color: #00a1b2!important;
 		.main-appoitment {
@@ -2034,10 +2039,10 @@
 				background-color: #00a1b2;
 			}
 			li:last-child {
-				background-color: #00a1b2;	
+				background-color: #00a1b2;
 				a:hover {
-					color: #00a1b2;	
-				}			
+					color: #00a1b2;
+				}
 			}
 		}
 		article:nth-child(3) {
@@ -2110,7 +2115,7 @@
 			p {
 				.number {
 					color: #00a1b2!important;
-					
+
 				}
 			}
 			.numbers:hover  {
@@ -2139,7 +2144,7 @@
 		background-color: rgba(0,161,178,.75);
 	}
 	#map {
-		article { 
+		article {
 			background-color: rgba(0,161,178,.85);
 
 		}
