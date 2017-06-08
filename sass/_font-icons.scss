@@ -4,13 +4,17 @@
  */
 /* FONT PATH
  * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+ @font-face {
+     font-family: 'FontAwesome';
+     src: url('fontawesome-webfont.eot');
+     src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/fontawesome-webfont.woff') format('woff'),
+          url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+          url('../fonts/fontawesome-webfont.svg#LegalTenderRegular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+ }
+
 .fa {
   display: inline-block;
   font-family: FontAwesome;
@@ -1321,7 +1325,7 @@
   content: "\f191";
 }
 .fa-dot-circle-o:before {
-  content: "\f192"; 
+  content: "\f192";
 }
 .fa-wheelchair:before {
   content: "\f193";
@@ -1339,6 +1343,17 @@
 
 
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?amwk8f');
+  src:url('../fonts/icomoon.eot?#iefixamwk8f') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?amwk8f') format('woff'),
+    url('../fonts/icomoon.ttf?amwk8f') format('truetype'),
+    url('../fonts/icomoon.svg?amwk8f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .icon {
   font-family: 'icomoon';
   speak: none;
@@ -1352,52 +1367,6 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-Sanoicons_CARDIOLOGY:before {
-  content: "\e600";
-}
-.icon-Sanoicons_EMERGENCY:before {
-  content: "\e601";
-}
-.icon-Sanoicons_GASTROENTEROLOGY:before {
-  content: "\e602";
-}
-.icon-Sanoicons_LABORATORY:before {
-  content: "\e603";
-}
-.icon-Sanoicons_MATERNITY:before {
-  content: "\e604";
-}
-.icon-Sanoicons_NEUROLOGY:before {
-  content: "\e605";
-}
-.icon-Sanoicons_ORGANDONATION:before {
-  content: "\e606";
-}
-.icon-Sanoicons_OurGoal:before {
-  content: "\e607";
-}
-.icon-Sanoicons_OurValues:before {
-  content: "\e608";
-}
-.icon-Sanoicons_OurVision:before {
-  content: "\e609";
-}
-.icon-Sanoicons_RESEARCH:before {
-  content: "\e60a";
-}
-
-
-@font-face {
-  font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?amwk8f');
-  src:url('../fonts/icomoon.eot?#iefixamwk8f') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?amwk8f') format('woff'),
-    url('../fonts/icomoon.ttf?amwk8f') format('truetype'),
-    url('../fonts/icomoon.svg?amwk8f#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -1501,4 +1470,3 @@
 .icon-Sano11:before {
   content: "\e615";
 }
-
