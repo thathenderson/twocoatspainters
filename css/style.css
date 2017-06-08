@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* --------------------------------------------------------------------------------------
 +
-+   AUTHOR: 
++   AUTHOR:
 +
 -------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------
@@ -149,10 +149,8 @@ h6 {
 a {
   outline: none;
   /* removing outline in Mozilla */
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  transition: all all 0.2s ease ease;
+  -webkit-transition: all all 0.2s ease ease;
   text-decoration: none;
   color: #848484;
 }
@@ -185,9 +183,6 @@ strong {
   font-weight: bold;
 }
 
-.clearfix {
-  *zoom: 1;
-}
 .clearfix:after {
   content: "";
   display: table;
@@ -308,8 +303,6 @@ main {
 -------------------------------------------------------------------------------------- */
 .btn {
   text-align: center;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -334,7 +327,7 @@ main {
   color: #00a2e3;
 }
 .btn.small:hover {
-  background: #4cb1bf;
+  background: #00a2e3;
   color: #fff;
   border: 2px solid #00a2e3;
 }
@@ -362,8 +355,6 @@ input[type="text"], textarea {
   -o-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -413,15 +404,24 @@ textarea {
   color: transparent;
 }
 
-.veterinary input[type="text"]:hover, .veterinary input[type="text"].error, .veterinary textarea.error, .veterinary input[type="text"]:focus, .veterinary textarea:hover, .veterinary textarea:focus {
+.veterinary input[type="text"]:hover, .veterinary input[type="text"]:focus, .veterinary textarea:hover, .veterinary textarea:focus {
+  border: 2px solid #3fb094;
+}
+.veterinary input[type="text"].error, .veterinary textarea.error {
   border: 2px solid #3fb094;
 }
 
-.dental input[type="text"]:hover, .dental input[type="text"].error, .dental textarea.error, .dental input[type="text"]:focus, .dental textarea:hover, .dental textarea:focus {
+.dental input[type="text"]:hover, .dental input[type="text"]:focus, .dental textarea:hover, .dental textarea:focus {
+  border: 2px solid #4460a7;
+}
+.dental input[type="text"].error, .dental textarea.error {
   border: 2px solid #4460a7;
 }
 
-.pharm input[type="text"]:hover, .pharm input[type="text"].error, .pharm textarea.error,.pharm input[type="text"]:focus, .pharm textarea:hover, .pharm textarea:focus {
+.pharm input[type="text"]:hover, .pharm input[type="text"]:focus, .pharm textarea:hover, .pharm textarea:focus {
+  border: 2px solid #00a1b2;
+}
+.pharm input[type="text"].error, .pharm textarea.error {
   border: 2px solid #00a1b2;
 }
 
@@ -464,10 +464,8 @@ header span i {
   font-size: 12px;
   color: #000;
   color: #585858;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   vertical-align: middle;
 }
 header nav {
@@ -480,8 +478,6 @@ header li.active a {
   background-color: #00a2e3;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
 }
@@ -497,8 +493,6 @@ header li a:hover {
   background-color: #00a2e3;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 header li + li {
@@ -573,8 +567,6 @@ footer a {
   font-size: 16px;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 2px solid #585864;
 }
@@ -612,13 +604,13 @@ footer small {
 +
 -------------------------------------------------------------------------------------- */
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   validation popup
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 .popup-email {
   width: 100%;
@@ -640,8 +632,6 @@ footer small {
   margin-top: -50px;
   background-color: #fff;
   display: block;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -681,13 +671,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   scroll to top
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #top {
   background-repeat: no-repeat;
@@ -700,10 +690,8 @@ footer small {
   display: none;
   position: fixed;
   right: 30px;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   border-radius: 5px;
   z-index: 99;
   width: 45px;
@@ -720,17 +708,17 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   #video section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #video {
   height: 600px;
-  background-image: url("http://twocoatspainters.com/images/WhatYouSay.jpg");
+  background-image: url("http://placehold.it/1921x660");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -moz-background-size: cover;
@@ -761,8 +749,6 @@ footer small {
   background-color: #f85800;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 0 20px;
   font-weight: 700;
@@ -778,8 +764,6 @@ footer small {
   background-color: #f85800;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border: none;
   margin: 0 10px;
@@ -795,20 +779,20 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   #subheader section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #subheader {
   width: 100%;
   position: relative;
 }
 #subheader.background-img {
-  background-image: url("http://twocoatspainters.com/images/WhatYouSay.jpg");
+  background-image: url("http://placehold.it/1921x660");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -moz-background-size: cover;
@@ -854,8 +838,6 @@ footer small {
   background-color: #f85800;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 0 20px;
   font-weight: 700;
@@ -864,13 +846,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   about section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #about {
   padding: 65px 0;
@@ -898,13 +880,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   doctors section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #doctors {
   background-color: #f1f1f5;
@@ -930,10 +912,8 @@ footer small {
 #doctors .about-doctors {
   width: 100%;
   height: auto;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   overflow: hidden;
 }
 #doctors .about-doctors .about-doc {
@@ -942,8 +922,6 @@ footer small {
   height: auto;
   padding-bottom: 100px;
   position: absolute;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -952,10 +930,8 @@ footer small {
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   /* hack for ie8 */
   opacity: 1\9;
   visibility: visible\9;
@@ -1034,10 +1010,10 @@ footer small {
   height: 100%;
   display: block;
 }
-#doctors .about-doctors .about-doc .last li {
+#doctors .about-doctors .about-doc .last > ul > li {
   padding: 15px 0;
 }
-#doctors .about-doctors .about-doc .last li + li {
+#doctors .about-doctors .about-doc .last > ul > li + li {
   border-top: 2px solid #dadae6;
 }
 #doctors .about-doctors .about-doc .last h6 {
@@ -1049,6 +1025,11 @@ footer small {
   vertical-align: top;
   margin-bottom: 0;
 }
+#doctors .about-doctors .about-doc .last .h6-subtext {
+  color: rgba(59, 59, 62, 0.38);
+  font-size: 14px;
+  margin: 5px 0;
+}
 #doctors .about-doctors .about-doc .last p {
   display: inline-block;
   line-height: 1.5;
@@ -1058,33 +1039,33 @@ footer small {
   font-size: 13px;
   vertical-align: top;
 }
-#doctors .about-doctors .about-doc .last li:last-child {
+#doctors .about-doctors .about-doc .last > ul > li:last-child {
   overflow: hidden;
   text-align: left;
   padding-bottom: 0;
   position: relative;
 }
-#doctors .about-doctors .about-doc .last li:last-child span {
+#doctors .about-doctors .about-doc .last > ul > li:last-child span {
   display: block;
   margin-top: 5px;
 }
-#doctors .about-doctors .about-doc .last li:last-child img {
+#doctors .about-doctors .about-doc .last > ul > li:last-child img {
   display: inline-block;
 }
-#doctors .about-doctors .about-doc .last li:last-child i {
+#doctors .about-doctors .about-doc .last > ul > li:last-child i {
   color: #585864;
   margin-left: 15px;
   display: inline-block;
   margin-top: 4px;
 }
-#doctors .about-doctors .about-doc .last li:last-child .info {
+#doctors .about-doctors .about-doc .last > ul > li:last-child .info {
   background-color: transparent;
   width: auto;
   display: inline-block;
   text-align: left;
   margin-bottom: 0;
 }
-#doctors .about-doctors .about-doc .last li:last-child a {
+#doctors .about-doctors .about-doc .last > ul > li:last-child a {
   display: inline-block;
   background-color: transparent;
   height: 50px;
@@ -1095,7 +1076,7 @@ footer small {
   right: 1px;
   font-weight: 700;
 }
-#doctors .about-doctors .about-doc .last li:last-child a:hover {
+#doctors .about-doctors .about-doc .last > ul > li:last-child a:hover {
   background-color: #00a2e3;
 }
 #doctors #team .id {
@@ -1106,10 +1087,8 @@ footer small {
   width: 100%;
   text-align: center;
   height: 150px;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
   z-index: 3;
 }
 #doctors #team h6 {
@@ -1165,10 +1144,8 @@ footer small {
   left: 0;
   width: 100%;
   height: 305px;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
   background-image: url("../images/plus.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1181,8 +1158,6 @@ footer small {
   margin-left: 30px;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 25px;
@@ -1200,13 +1175,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   appoitment section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #appoitment {
   width: 100%;
@@ -1233,13 +1208,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   departments section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #departments {
   width: 100%;
@@ -1413,10 +1388,8 @@ footer small {
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   /* hack for ie8 */
   opacity: 1\9;
   visibility: visible\9;
@@ -1437,10 +1410,8 @@ footer small {
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   /* hack for ie8 */
   opacity: 1\9;
   visibility: visible\9;
@@ -1469,20 +1440,16 @@ footer small {
   z-index: 2;
   display: block;
   cursor: pointer;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 #departments li div.more-btn span {
   position: absolute;
   top: 50%;
   left: 50%;
   font-size: 40px;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   -ms-transform: translate(-50%, -50%);
   /* IE 9 */
   -webkit-transform: translate(-50%, -50%);
@@ -1542,13 +1509,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   pricing section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #pricing {
   padding: 100px 0;
@@ -1576,8 +1543,6 @@ footer small {
   width: 260px;
   text-align: center;
   background-color: #fff;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -1588,10 +1553,8 @@ footer small {
   color: #585864;
   display: inline-block;
   position: relative;
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
   font-family: "Ubuntu", sans-serif;
 }
 #pricing article:hover {
@@ -1606,8 +1569,6 @@ footer small {
   font-weight: 600;
 }
 #pricing article ul {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -1723,13 +1684,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   clinic section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #clinic {
   padding: 100px 0 0;
@@ -1763,8 +1724,6 @@ footer small {
   display: inline-block;
   color: #585864;
   cursor: pointer;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -1819,8 +1778,6 @@ footer small {
   display: inline-block;
   width: 255px;
   background-color: #fff;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -1848,13 +1805,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   description section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #description {
   width: 100%;
@@ -1862,7 +1819,7 @@ footer small {
   text-align: center;
   overflow-x: hidden;
   height: auto;
-  background: url("http://twocoatspainters.com/images/WhatYouSay.jpg") 50% 0 no-repeat fixed;
+  background: url("http://placehold.it/1921x900") 50% 0 no-repeat fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -1911,13 +1868,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   main-appointment section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #main-appoitment {
   width: 100%;
@@ -2047,10 +2004,8 @@ footer small {
   font-size: 18px;
   display: block;
   margin-left: 0;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 #main-appoitment .human-test label {
   text-align: center;
@@ -2065,10 +2020,8 @@ footer small {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: #f1f1f5;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 #main-appoitment .human-test label:hover {
   background-color: #00a2e3;
@@ -2095,13 +2048,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   hippocrate section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #hippocrate {
   text-align: center;
@@ -2156,13 +2109,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   theme section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #theme {
   width: 100%;
@@ -2192,13 +2145,13 @@ footer small {
 }
 
 /*************************************
-************************************** 
-************************************** 
+**************************************
+**************************************
 
   map section
 
 **************************************
-************************************** 
+**************************************
 **************************************/
 #map {
   position: relative;
@@ -2237,8 +2190,6 @@ footer small {
   margin-left: -130px;
   margin-bottom: 60px;
   font-weight: 700;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -2250,10 +2201,8 @@ footer small {
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   /* hack for ie8 */
   opacity: 1\9;
   visibility: visible\9;
@@ -2264,8 +2213,6 @@ footer small {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -2273,10 +2220,8 @@ footer small {
   background-clip: padding-box;
   background-color: #fff;
   text-align: center;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 #map article .show.active {
   visibility: visible;
@@ -2868,8 +2813,6 @@ footer small {
   font-weight: 700;
   color: #fff;
   display: inline-block;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-background-clip: padding;
   -o-background-clip: padding-box;
@@ -3027,13 +2970,13 @@ footer small {
 }
 
 #about {
-  /* 
+  /*
    *  Owl Carousel - Animate Plugin
    */
-  /* 
+  /*
    *  Owl Carousel - Auto Height Plugin
    */
-  /* 
+  /*
    *  Core Owl Carousel CSS File
    */
 }
@@ -3151,10 +3094,8 @@ footer small {
   display: block;
   overflow: hidden;
   margin: 0 auto;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   display: inline-block;
   position: absolute !important;
   left: 50%;
@@ -3162,8 +3103,6 @@ footer small {
   z-index: 999;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   -ms-transform: translate(-50%, 0);
   /* IE 9 */
@@ -3177,16 +3116,12 @@ footer small {
 }
 #about .owl-carousel .owl-item .item div span {
   color: #b8b8cf;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 #about .owl-carousel .owl-item .item div:hover {
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #00a2e3;
   width: 130px;
@@ -3201,10 +3136,8 @@ footer small {
 }
 #about .owl-carousel .owl-item .item h4 {
   color: #fff;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
   padding-top: 180px !important;
   font-weight: 500;
   position: relative;
@@ -3219,44 +3152,25 @@ footer small {
   visibility: hidden;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   /* hack for ie8 */
   opacity: 1\9;
   visibility: visible\9;
   display: none\9;
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
   transition: none;
+  -webkit-transition: none;
   margin-bottom: 0;
-}
-#about .owl-carousel .owl-item .about-icon1 span {
-  margin-top: 18px;
-  font-size: 71px;
-}
-#about .owl-carousel .owl-item .about-icon2 span {
-  margin-top: 24px;
-  font-size: 43px;
-}
-#about .owl-carousel .owl-item .about-icon3 span {
-  margin-top: 20px;
-  font-size: 56px;
 }
 #about .owl-carousel .owl-item.center .item div {
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #00a2e3;
   width: 130px;
   height: 130px;
   display: block;
   border: none;
-  top: 0;
 }
 #about .owl-carousel .owl-item.center .item div span {
   color: #fff !important;
@@ -3269,18 +3183,6 @@ footer small {
   display: block;
   text-align: center;
   margin-bottom: 0;
-}
-#about .owl-carousel .owl-item.center .item .about-icon1 span {
-  margin-top: 26px;
-  font-size: 93px;
-}
-#about .owl-carousel .owl-item.center .item .about-icon2 span {
-  margin-top: 38px;
-  font-size: 53px;
-}
-#about .owl-carousel .owl-item.center .item .about-icon3 span {
-  margin-top: 26px;
-  font-size: 76px;
 }
 #about .owl-carousel .owl-item.center p {
   visibility: visible;
@@ -3300,47 +3202,30 @@ footer small {
   font-size: 14px;
   line-height: 1.5;
 }
-#about .owl-carousel .owl-item .about-icon1:hover span {
-  margin-top: 26px;
-  font-size: 93px;
-}
-#about .owl-carousel .owl-item .about-icon2:hover span {
-  margin-top: 38px;
-  font-size: 53px;
-}
-#about .owl-carousel .owl-item .about-icon3:hover span {
-  margin-top: 26px;
-  font-size: 76px;
-}
 
-.veterinary #about .owl-carousel .owl-item .item div:hover {
-  background-color: #3fb094;
+.owl-carousel .owl-item .icon {
+  font-size: 40px;
 }
-.veterinary #about .owl-carousel .owl-item.center .item div {
-  background-color: #3fb094;
+.owl-carousel .owl-item .about-icon__our-values {
+  padding-top: 28px;
 }
-.veterinary #about .owl-carousel .owl-item.center .item h4 {
-  color: #3fb094;
+.owl-carousel .owl-item .about-icon__our-vision {
+  padding-top: 25px;
 }
-
-.dental #about .owl-carousel .owl-item .item div:hover {
-  background-color: #4460a7;
+.owl-carousel .owl-item .about-icon__our-goal {
+  padding-top: 30px;
 }
-.dental #about .owl-carousel .owl-item.center .item div {
-  background-color: #4460a7;
+.owl-carousel .owl-item.center .icon {
+  font-size: 60px;
 }
-.dental #about .owl-carousel .owl-item.center .item h4 {
-  color: #4460a7;
+.owl-carousel .owl-item.center .about-icon__our-values {
+  padding-top: 35px;
 }
-
-.pharm #about .owl-carousel .owl-item .item div:hover {
-  background-color: #00a1b2;
+.owl-carousel .owl-item.center .about-icon__our-vision {
+  padding-top: 33px;
 }
-.pharm #about .owl-carousel .owl-item.center .item div {
-  background-color: #00a1b2;
-}
-.pharm #about .owl-carousel .owl-item.center .item h4 {
-  color: #00a1b2;
+.owl-carousel .owl-item.center .about-icon__our-goal {
+  padding-top: 32px;
 }
 
 /* Magnific Popup CSS */
@@ -4393,8 +4278,8 @@ disabled look for disabled choices in the results dropdown
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  src: url("fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#LegalTenderRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -6119,6 +6004,13 @@ disabled look for disabled choices in the results dropdown
   content: "\f196";
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?amwk8f");
+  src: url("../fonts/icomoon.eot?#iefixamwk8f") format("embedded-opentype"), url("../fonts/icomoon.woff?amwk8f") format("woff"), url("../fonts/icomoon.ttf?amwk8f") format("truetype"), url("../fonts/icomoon.svg?amwk8f#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 .icon {
   font-family: 'icomoon';
   speak: none;
@@ -6133,57 +6025,6 @@ disabled look for disabled choices in the results dropdown
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Sanoicons_CARDIOLOGY:before {
-  content: "\e600";
-}
-
-.icon-Sanoicons_EMERGENCY:before {
-  content: "\e601";
-}
-
-.icon-Sanoicons_GASTROENTEROLOGY:before {
-  content: "\e602";
-}
-
-.icon-Sanoicons_LABORATORY:before {
-  content: "\e603";
-}
-
-.icon-Sanoicons_MATERNITY:before {
-  content: "\e604";
-}
-
-.icon-Sanoicons_NEUROLOGY:before {
-  content: "\e605";
-}
-
-.icon-Sanoicons_ORGANDONATION:before {
-  content: "\e606";
-}
-
-.icon-Sanoicons_OurGoal:before {
-  content: "\e607";
-}
-
-.icon-Sanoicons_OurValues:before {
-  content: "\e608";
-}
-
-.icon-Sanoicons_OurVision:before {
-  content: "\e609";
-}
-
-.icon-Sanoicons_RESEARCH:before {
-  content: "\e60a";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?amwk8f");
-  src: url("../fonts/icomoon.eot?#iefixamwk8f") format("embedded-opentype"), url("../fonts/icomoon.woff?amwk8f") format("woff"), url("../fonts/icomoon.ttf?amwk8f") format("truetype"), url("../fonts/icomoon.svg?amwk8f#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -6292,20 +6133,6 @@ font-family: 'PT Sans Narrow', sans-serif;
 font-family: 'PT Sans Caption', sans-serif;
 font-family: 'PT Sans', sans-serif;
 */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("fontawesome-webfont.eot");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#LegalTenderRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-u8m1tk");
-  src: url("../fonts/icomoon.eot?#iefix-u8m1tk") format("embedded-opentype"), url("../fonts/icomoon.woff?-u8m1tk") format("woff"), url("../fonts/icomoon.ttf?-u8m1tk") format("truetype"), url("../fonts/icomoon.svg?-u8m1tk#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /* --------------------------------------------------------------------------------------
 +
 + MEDIA
@@ -6582,15 +6409,11 @@ font-family: 'PT Sans', sans-serif;
   header nav li a:hover {
     behavior: url("../PIE.htc");
     position: relative;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
     border-radius: 0;
   }
   header nav li.active a {
     behavior: url("../PIE.htc");
     position: relative;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
     border-radius: 0;
   }
   header nav li + li {
@@ -6651,15 +6474,11 @@ font-family: 'PT Sans', sans-serif;
     height: 130px;
     display: block;
     margin: 0 auto 60px;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
     display: block;
-    -moz-transition: none;
-    -o-transition: none;
-    -webkit-transition: none;
     transition: none;
+    -webkit-transition: none;
     background-repeat: no-repeat;
     background-image: url("../images/icons.png");
     -webkit-box-sizing: border-box;
@@ -6944,10 +6763,8 @@ font-family: 'PT Sans', sans-serif;
   width: 20px;
   height: 40px;
   z-index: 5;
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
   transition: none;
+  -webkit-transition: none;
 }
 
 #ui-datepicker-div {
@@ -6962,8 +6779,6 @@ font-family: 'PT Sans', sans-serif;
   text-align: center;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 2px solid #00a2e3;
 }
@@ -6972,8 +6787,6 @@ font-family: 'PT Sans', sans-serif;
   height: 40px;
   behavior: url("../PIE.htc");
   position: relative;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   background-color: #585864;
 }
@@ -7070,7 +6883,7 @@ font-family: 'PT Sans', sans-serif;
  */
 /*
 * jQuery.mb.components: mb.YTVPlayer
-* ┬⌐ 2001 - 2012 Matteo Bicocchi (pupunzi), Open Lab
+* © 2001 - 2012 Matteo Bicocchi (pupunzi), Open Lab
 *
 */
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on May 30, 2013 */
@@ -7280,3 +7093,16 @@ font-family: 'PT Sans', sans-serif;
 .YTPOverlay.raster.retina {
   background: url("../images/raster@2x.png");
 }
+
+.prices-start-at {
+  display: inline-block;
+  list-style: disc;
+  padding-left: 15px;
+}
+.prices-start-at li {
+  margin-bottom: 10px 0;
+  color: #585864;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
