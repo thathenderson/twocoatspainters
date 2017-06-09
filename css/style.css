@@ -384,7 +384,7 @@ input[type="text"].error,
 input[type="email"].error,
 textarea.error {
   background-color: #f1f1f5;
-  border: 2px solid #00a2e3;
+  border: 2px solid #bf4f4b;
   color: #585864;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -403,27 +403,6 @@ textarea {
 
 [placeholder]:focus::-webkit-input-placeholder {
   color: transparent;
-}
-
-.veterinary input[type="text"]:hover, .veterinary input[type="text"]:focus, .veterinary textarea:hover, .veterinary textarea:focus {
-  border: 2px solid #3fb094;
-}
-.veterinary input[type="text"].error, .veterinary textarea.error {
-  border: 2px solid #3fb094;
-}
-
-.dental input[type="text"]:hover, .dental input[type="text"]:focus, .dental textarea:hover, .dental textarea:focus {
-  border: 2px solid #4460a7;
-}
-.dental input[type="text"].error, .dental textarea.error {
-  border: 2px solid #4460a7;
-}
-
-.pharm input[type="text"]:hover, .pharm input[type="text"]:focus, .pharm textarea:hover, .pharm textarea:focus {
-  border: 2px solid #00a1b2;
-}
-.pharm input[type="text"].error, .pharm textarea.error {
-  border: 2px solid #00a1b2;
 }
 
 /* --------------------------------------------------------------------------------------
