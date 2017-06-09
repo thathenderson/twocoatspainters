@@ -145,6 +145,9 @@ $(document).ready( function () {
               $('.element p').remove();
               $('.popup-email').fadeIn('fast');
             }
+
+            var rand2 = (Math.floor(Math.random() * 4));
+            $('#test span').html(word[rand2]);
           }
         });
       } else {
