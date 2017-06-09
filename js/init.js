@@ -107,7 +107,7 @@ $(document).ready( function () {
    $('#btn').click(function() {
        $('.popup-email').fadeOut('fast');
    });
-   $('#contact-form').validate({
+   $('#contact').validate({
         rules: {
             name: "required",
             mail: {
@@ -180,7 +180,7 @@ $(document).ready( function () {
     /* =  scroll page on click header links
     /*-------------------------------------------------*/
 
-    $('.logo,header li a, .main-appoitment, .close, #top').smoothScroll({
+    $('.logo,header li a, .get-estimate, .close, #top').smoothScroll({
       offset: - top_ofset,
       // one of 'top' or 'left'
       direction: 'top',
