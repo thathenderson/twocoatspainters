@@ -314,13 +314,13 @@ main {
   height: 34px;
   line-height: 32px;
   font-size: 12px;
-  border: 2px solid #00a2e3;
-  color: #00a2e3;
+  border: 2px solid #4bb1bf;
+  color: #4bb1bf;
 }
 .btn.small:hover {
-  background: #00a2e3;
+  background: #4bb1bf;
   color: #fff;
-  border: 2px solid #00a2e3;
+  border: 2px solid #4bb1bf;
 }
 .btn.medium {
   padding: 0 18px;
@@ -336,7 +336,9 @@ main {
 + FORMS
 +
 -------------------------------------------------------------------------------------- */
-input[type="text"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   vertical-align: middle;
   border: 2px solid #f1f1f5;
   color: #585864;
@@ -362,17 +364,25 @@ input[type="text"], textarea {
   box-shadow: none;
   width: 100%;
 }
-input[type="text"]:hover, input[type="text"]:focus, textarea:hover, textarea:focus {
+input[type="text"]:hover, input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+textarea:hover,
+textarea:focus {
   background-color: #f1f1f5;
-  border: 2px solid #00a2e3;
+  border: 2px solid #4bb1bf;
 }
-input[type="text"]:invalid, textarea:invalid {
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   /* fixes mozilla red outline (shadow) */
 }
-input[type="text"].error, textarea.error {
+input[type="text"].error,
+input[type="email"].error,
+textarea.error {
   background-color: #f1f1f5;
   border: 2px solid #00a2e3;
   color: #585864;
@@ -446,10 +456,10 @@ header span {
   margin-right: -20px;
 }
 header span.active i {
-  color: #00a2e3;
+  color: #4bb1bf;
 }
 header span:hover i {
-  color: #00a2e3;
+  color: #4bb1bf;
 }
 header span i {
   font-size: 12px;
@@ -466,7 +476,7 @@ header li {
   display: inline-block;
 }
 header li.active a {
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
   behavior: url("../PIE.htc");
   position: relative;
   border-radius: 5px;
@@ -481,7 +491,7 @@ header li a {
   font-weight: 500;
 }
 header li a:hover {
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
   behavior: url("../PIE.htc");
   position: relative;
   border-radius: 5px;
@@ -562,8 +572,8 @@ footer a {
   border: 2px solid #585864;
 }
 footer a:hover {
-  border: 2px solid #00a2e3;
-  background-color: #00a2e3;
+  border: 2px solid #4bb1bf;
+  background-color: #4bb1bf;
 }
 footer span {
   margin-top: 8px;
@@ -646,13 +656,13 @@ footer small {
   line-height: 30px;
   font-size: 12px;
   background-color: #fff;
-  border: 2px solid #00a2e3;
-  color: #00a2e3;
+  border: 2px solid #4bb1bf;
+  color: #4bb1bf;
 }
 .popup-email .element button:hover {
-  background: #00a2e3;
+  background: #4bb1bf;
   color: #fff;
-  border: 2px solid #00a2e3;
+  border: 2px solid #4bb1bf;
 }
 .popup-email .success p {
   color: #15ad9e;
@@ -755,7 +765,7 @@ footer small {
   height: 50px;
   line-height: 50px;
   color: #fff;
-  background-color: #f85800;
+  background-color: #fbac36;
   behavior: url("../PIE.htc");
   position: relative;
   border-radius: 5px;
@@ -873,7 +883,7 @@ footer small {
   font-weight: 400;
 }
 #doctors .about-doctors .about-doc .close:hover {
-  color: #00a2e3;
+  color: #4bb1bf;
 }
 #doctors .about-doctors .about-doc .close span {
   font-size: 20px;
@@ -919,7 +929,7 @@ footer small {
   background-color: #585864;
 }
 #doctors .about-doctors .about-doc div:nth-child(2) p {
-  color: #00a2e3;
+  color: #4bb1bf;
   display: block;
   text-align: center;
   font-size: 13px;
@@ -997,7 +1007,7 @@ footer small {
   font-weight: 700;
 }
 #doctors .about-doctors .about-doc .last > ul > li:last-child a:hover {
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
 }
 #doctors #team .id {
   position: absolute;
@@ -1030,7 +1040,7 @@ footer small {
   background-color: #585864;
 }
 #doctors #team p {
-  color: #00a2e3;
+  color: #4bb1bf;
   display: block;
   text-align: center;
   font-size: 13px;
@@ -1105,7 +1115,7 @@ footer small {
 **************************************/
 #appoitment {
   width: 100%;
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
   padding: 60px 0;
 }
 #appoitment h3 {
@@ -1124,7 +1134,7 @@ footer small {
 }
 #appoitment div a:hover {
   background-color: #fff;
-  color: #00a2e3;
+  color: #4bb1bf;
 }
 
 /*************************************
@@ -1226,20 +1236,20 @@ footer small {
 }
 
 #subheader {
-  /* 
+  /*
   *  Owl Carousel - Animate Plugin
   */
-  /* 
+  /*
   *  Owl Carousel - Auto Height Plugin
   */
-  /* 
+  /*
   *  Core Owl Carousel CSS File
   */
   /* No Js */
-  /* 
+  /*
   *  Owl Carousel - Lazy Load Plugin
   */
-  /* 
+  /*
   *  Owl Carousel - Video Plugin
   */
 }
@@ -1451,7 +1461,7 @@ footer small {
   padding: 0 20px;
   height: 50px;
   line-height: 50px;
-  background-color: #f85800;
+  background-color: #fbac36;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   color: #fff;
@@ -1468,7 +1478,7 @@ footer small {
   margin-left: -100px;
 }
 #subheader .item .main-app:hover {
-  background-color: #e04f00;
+  background-color: #4bb1bf;
 }
 #subheader .item .slide-header {
   width: 50%;
@@ -1766,7 +1776,7 @@ footer small {
   behavior: url("../PIE.htc");
   position: relative;
   border-radius: 50%;
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
   width: 130px;
   height: 130px;
   display: block;
@@ -1809,7 +1819,7 @@ footer small {
   behavior: url("../PIE.htc");
   position: relative;
   border-radius: 50%;
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
   width: 130px;
   height: 130px;
   display: block;
@@ -1822,7 +1832,7 @@ footer small {
   margin-top: 0;
 }
 #about .owl-carousel .owl-item.center .item h4 {
-  color: #00a2e3;
+  color: #4bb1bf;
   display: block;
   text-align: center;
   margin-bottom: 0;
@@ -2386,7 +2396,7 @@ Version: 3.4.5 Timestamp: Mon Nov  4 08:22:42 PST 2013
   line-height: 50px;
   color: #fff;
   text-decoration: none;
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
   border-radius: 5px;
   font-weight: 700;
   -webkit-box-sizing: border-box;
@@ -2458,7 +2468,7 @@ Version: 3.4.5 Timestamp: Mon Nov  4 08:22:42 PST 2013
   top: 100%;
   background: #fff;
   color: #848499;
-  border: 2px solid #00a2e3;
+  border: 2px solid #4bb1bf;
   border-top: 0;
   border-radius: 0 0 5px 5px;
 }
@@ -2474,7 +2484,7 @@ Version: 3.4.5 Timestamp: Mon Nov  4 08:22:42 PST 2013
 
 .select2-drop.select2-drop-above {
   margin-top: 1px;
-  border-top: 2px solid #00a2e3;
+  border-top: 2px solid #4bb1bf;
   border-bottom: 0;
   border-radius: 5px 5px 0 0;
 }
@@ -2623,7 +2633,7 @@ Version: 3.4.5 Timestamp: Mon Nov  4 08:22:42 PST 2013
 }
 
 .select2-results .select2-highlighted {
-  color: #00a2e3;
+  color: #4bb1bf;
 }
 
 .select2-results li em {
@@ -2898,7 +2908,7 @@ disabled look for disabled choices in the results dropdown
   cursor: pointer !important;
 }
 .nicescroll-rails > div {
-  background-color: #00a2e3 !important;
+  background-color: #4bb1bf !important;
 }
 
 .veterinary .nicescroll-rails > div {
@@ -5095,7 +5105,7 @@ disabled look for disabled choices in the results dropdown
   }
   #about .slide_element li h4 {
     margin-bottom: 60px;
-    color: #00a2e3;
+    color: #4bb1bf;
   }
   #about .slide_element li p {
     display: block !important;
@@ -5337,7 +5347,7 @@ disabled look for disabled choices in the results dropdown
   behavior: url("../PIE.htc");
   position: relative;
   border-radius: 5px;
-  border: 2px solid #00a2e3;
+  border: 2px solid #4bb1bf;
 }
 #ui-datepicker-div .ui-datepicker-header {
   position: relative;
@@ -5379,7 +5389,7 @@ disabled look for disabled choices in the results dropdown
 }
 #ui-datepicker-div .ui-datepicker-calendar thead th {
   text-align: center;
-  color: #00a2e3;
+  color: #4bb1bf;
 }
 #ui-datepicker-div .ui-datepicker-calendar tbody td {
   text-align: center;
@@ -5746,7 +5756,7 @@ disabled look for disabled choices in the results dropdown
   display: block;
 }
 .textarea__human-test #test .number {
-  color: #00a2e3;
+  color: #4bb1bf;
   vertical-align: top;
   display: inline-block;
   margin-top: -5px;
@@ -5771,13 +5781,13 @@ disabled look for disabled choices in the results dropdown
   -webkit-transition: all 0.4s ease;
 }
 .textarea__human-test .numbers:hover {
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
 }
 .textarea__human-test .numbers:hover span {
   color: #fff;
 }
 .textarea__human-test .numbers.active1 {
-  background-color: #00a2e3;
+  background-color: #4bb1bf;
 }
 .textarea__human-test .numbers.active1 span {
   color: #fff;
@@ -5803,8 +5813,8 @@ disabled look for disabled choices in the results dropdown
   margin-top: 19px;
   width: 100%;
   font-size: 14px;
-  border: 2px solid #00a2e3;
-  background-color: #00a2e3;
+  border: 2px solid #4bb1bf;
+  background-color: #4bb1bf;
   color: #fff;
   line-height: 45px !important;
 }

@@ -5,7 +5,9 @@
 -------------------------------------------------------------------------------------- */
 
 
-input[type="text"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
 	vertical-align: middle;
 	border: 2px solid $input-bgr;
 	color: $input-clr;
@@ -17,7 +19,7 @@ input[type="text"], textarea {
     font-size: $base-font-size;
     @include lh(50px);
     @include bs;
-    -webkit-appearance: none; //remove inner box-shadow from iOS devices 
+    -webkit-appearance: none; //remove inner box-shadow from iOS devices
     box-shadow: none;
     width: 100%;
 	&:hover, &:focus {
@@ -26,7 +28,7 @@ input[type="text"], textarea {
 	}
     &:invalid {
         @include box-shadow(none);  /* fixes mozilla red outline (shadow) */
-    }	
+    }
 
     &.error {
 		background-color: #f1f1f5;

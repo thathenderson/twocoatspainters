@@ -165,7 +165,7 @@
 		a {
 			@include lh(50px);
 			color: #fff;
-			background-color: #f85800;
+			background-color: $fifth-clr;
 			@include pie(5px);
 			padding: 0 20px;
 			font-weight: 700;
