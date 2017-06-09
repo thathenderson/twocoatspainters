@@ -93,74 +93,72 @@ $(document).ready( function () {
   /* =  CONTACT FORM
   /*-------------------------------------------------*/
 
-
   var top_ofset = $('header').height() - 1;
   var word = ['one', 'two', 'three', 'four', 'five'];
   var rand = (Math.floor(Math.random() * 4));
   var correct = word[rand];
 
-   $('#test span').html(correct);
-   $('input[name=rand]').click(function() {
-      $('input[name=rand]').parent().removeClass('active1');
-      $('input[name=rand]:checked').parent().addClass('active1');
-   });
-   $('#btn').click(function() {
-       $('.popup-email').fadeOut('fast');
-   });
-   $('#contact').validate({
-        rules: {
-            name: "required",
-            mail: {
-                required: true,
-                email: true
-            },
-            message: "required"
-        },
-        submitHandler: function(form) {
-            var user = $('input[name=rand]:checked').val();
+  $('#test span').html(correct);
+  $('input[name=rand]').click(function() {
+    $('input[name=rand]').parent().removeClass('active1');
+    $('input[name=rand]:checked').parent().addClass('active1');
+  });
+  $('#btn').click(function() {
+     $('.popup-email').fadeOut('fast');
+  });
 
-            if(user === correct) {
-                $.ajax({
-                    url: 'form_data.php',
-                    type: 'POST',
-                    dataType: 'json',
-                    data: {
-                      name: $('#name').val(),
-                      lastname: $('#lastname').val(),
-                      phone: $('#phone').val(),
-                      number: $('#number').val(),
-                      department: $('#e2').val(),
-                      date: $('#date').val(),
-                      mail: $('#mail').val(),
-                      message: $('#message').val()
-                    },
-                    success: function(response) {
-                        if(response.status === true) {
-                            $('.element p').remove();
-                            $('.element').prepend('<p class="success">' + response.msg + '</p>');
-                            $('.popup-email').fadeIn('fast');
-                            $('#name').prop('value', '');
-                            $('#lastname').prop('value', '');
-                            $('#phone').prop('value', '');
-                            $('#number').prop('value', '');
-                            $('#mail').prop('value', '');
-                            $('#message').prop('value', '');
-                            $('#date').prop('value', '');
-                            $('#e2').prop('value', '0');
-                            $('input[name=rand]:checked').parent().removeClass('active1');
-                            $('input[name=rand]:checked').prop('checked', false);
-                        } else {
-                            $('.element p').remove();
-                            $('.popup-email').fadeIn('fast');
-                        }
-                    }
-                });
+  $('#contact').validate({
+    rules: {
+      name: "required",
+      mail: {
+        required: true,
+        email: true
+      },
+      message: "required"
+    },
+    submitHandler: function(form) {
+      var user = $('input[name=rand]:checked').val();
+
+      if(user === correct) {
+        $.ajax({
+          url: 'form_data.php',
+          type: 'POST',
+          dataType: 'json',
+          data: {
+            name: $('#name').val(),
+            lastname: $('#lastname').val(),
+            phone: $('#phone').val(),
+            number: $('#address').val(),
+            date: $('#date').val(),
+            mail: $('#mail').val(),
+            message: $('#message').val()
+          },
+          success: function(response) {
+            if(response.status === true) {
+              $('.element p').remove();
+              $('.element').prepend('<p class="success">' + response.msg + '</p>');
+              $('.popup-email').fadeIn('fast');
+              $('#name').prop('value', '');
+              $('#lastname').prop('value', '');
+              $('#phone').prop('value', '');
+              $('#address').prop('value', '');
+              $('#mail').prop('value', '');
+              $('#message').prop('value', '');
+              $('#date').prop('value', '');
+              $('input[name=rand]:checked').parent().removeClass('active1');
+              $('input[name=rand]:checked').prop('checked', false);
             } else {
-                $('.popup-email').fadeIn('fast');
-                $('.element p').remove();
+              $('.element p').remove();
+              $('.popup-email').fadeIn('fast');
             }
-        }
-    });
+          }
+        });
+      } else {
+        $('.popup-email').fadeIn('fast');
+        $('.element p').remove();
+      }
+    }
+  });
 
     /*-------------------------------------------------*/
     /* =  ADDS MOBILE BROWSER CLASS TO HTML TAG
