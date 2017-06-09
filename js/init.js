@@ -107,15 +107,7 @@ $(document).ready( function () {
      $('.popup-email').fadeOut('fast');
   });
 
-  $('#contact').validate({
-    rules: {
-      name: "required",
-      mail: {
-        required: true,
-        email: true
-      },
-      message: "required"
-    },
+  $("form").validate({
     submitHandler: function(form) {
       var user = $('input[name=rand]:checked').val();
 
@@ -131,7 +123,8 @@ $(document).ready( function () {
             number: $('#address').val(),
             date: $('#date').val(),
             mail: $('#mail').val(),
-            message: $('#message').val()
+            message: $('#message').val(),
+            e2: $("#e2").val()
           },
           success: function(response) {
             if(response.status === true) {
@@ -145,6 +138,7 @@ $(document).ready( function () {
               $('#mail').prop('value', '');
               $('#message').prop('value', '');
               $('#date').prop('value', '');
+              $("#e2").prop("selectedIndex", "0");
               $('input[name=rand]:checked').parent().removeClass('active1');
               $('input[name=rand]:checked').prop('checked', false);
             } else {

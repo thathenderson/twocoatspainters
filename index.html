@@ -399,9 +399,9 @@
       <section id="contact" class="contact-form">
         <div class="container">
           <h1>Contact</h1>
-          <form action="form_data.php" id="contact-form" novalidate>
+          <form action="form_data.php" id="contact-form">
             <div class="select2">
-              <select id="e2" name="department">
+              <select id="e2" name="e2">
                 <option value="0">- CHOOSE SERVICE -</option>
                 <option value="1">Exterior</option>
                 <option value="2">Interior</option>
@@ -415,11 +415,11 @@
               <div class="input__row">
                 <label>
                   <span>First Name *</span>
-                  <input id="name" type="text" name="name" />
+                  <input id="name" type="text" name="name" required/>
                 </label>
                 <label>
                   <span>Last Name</span>
-                  <input id="lastname" type="text" name="lastname" />
+                  <input id="lastname" type="text" name="lastname" required/>
                 </label>
               </div>
 
@@ -430,7 +430,7 @@
                 </label>
                 <label>
                   <span>E-mail *</span>
-                  <input id="mail" type="text" name="mail" />
+                  <input id="mail" type="email" name="mail" required/>
                 </label>
               </div>
 
@@ -449,7 +449,7 @@
             <div class="textarea">
               <label class="textarea__message">
                 <span>Your Message *</span>
-                <textarea  name="message" id="message"></textarea>
+                <textarea name="message" id="message" required></textarea>
               </label>
               <div class="textarea__human-test">
                 <div id="test">
@@ -535,6 +535,7 @@
 
   <!-- JavaScript at the bottom for fast page loading -->
   <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   <script src="js/jquery.autosize.js"></script>
   <script src="js/jquery.smooth-scroll.min.js"></script>
   <script src="js/selectivizr-min.js"></script>
@@ -548,7 +549,6 @@
   <script src="js/parallax-plugin.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/jquery.inview.min.js"></script>
-  <script src="js/jquery.validate.js"></script>
   <script src="js/jquery.hoverdir.js"></script>
   <script src="js/responsiveslides.min.js"></script>
 
