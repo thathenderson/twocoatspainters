@@ -16,7 +16,7 @@
 		min-width: 100%;
 		@include bs;
 		padding: 0 30px;
-	
+
 	}
 	header {
 		nav {
@@ -34,25 +34,25 @@
 		#team {
 			ul {
 				text-align: center;
-				
+
 			}
 			li {
 				margin: 0 2% 3%;
-				
+
 			}
 			li:nth-child(4n+1) {
 				margin-left: 2%;
-				
+
 			}
 		}
 		.about-doctors {
 			text-align: center;
-			
+
 			.about-doc {
 				div:nth-child(2) {
 					width: 45%;
 					margin-bottom: 20px;
-					
+
 				}
 				div:last-child {
 					width: 50%;
@@ -69,7 +69,7 @@
 			float: none;
 			display: block;
 			margin-top: 50px;
-			
+
 		}
 	}
 	#departments {
@@ -80,22 +80,22 @@
 	#pricing {
 		text-align: center;
 		padding: 70px 0;
-		
+
 		.container {
 			padding: 0 11%;
-			
+
 		}
 		article {
 			margin: 0 3% 6%;
-			
+
 			li:first-child {
 				padding: 30px 0;
-						
+
 			}
 		}
 		article + article {
 			margin-left:3%;
-			
+
 		}
 		article:nth-child(4) {
 			width: 260px;
@@ -103,26 +103,26 @@
 			top: 0;
 			&:hover {
 				top: -15px;
-				
+
 			}
 			li {
 				padding: 15px 0;
-				
+
 			}
 			li:first-child {
 				padding: 30px 0 9px;
-				
+
 			}
 			li:last-child {
 				padding: 23px 0;
-				
+
 			}
 			&:before  {
 				background-image:none;
-			} 
+			}
 			&:after  {
 				background-image:none;
-			} 
+			}
 		}
 	}
 	#clinic {
@@ -130,14 +130,14 @@
 		.numbers {
 			ul {
 				padding: 0 9%;
-				
+
 			}
 			li {
 				margin: 0 3% 5%;
 			}
 			li+li {
 				margin-left: 3%;
-				
+
 			}
 		}
 	}
@@ -148,7 +148,7 @@
 		}
 	}
 
-	#main-appoitment {
+	.contact-form {
 		padding: 70px 0;
 
 		.select2 {
@@ -159,50 +159,7 @@
 		}
 		.select2-choice {
 			width: 100%;
-			
-		}
-		.input {
-			label {
-				width: 48.2%;
-				margin-left: 3.3%;
 
-			}
-		}
-		.date {
-			width: 48.2%;
-			vertical-align: top;
-			label {
-				width: 100%;
-				vertical-align: top;
-				input {
-					width: 57%;
-					display: inline-block;
-				}
-				a {
-					width: 40%;
-					display: inline-block;
-					margin-left: 2%;
-					
-				}
-			}
-		}
-		.textarea {
-			position: relative;
-			>label {
-				width: 100%;
-				padding-right: 230px;
-				@include bs;
-				textarea {
-					width: 100%;
-				}
-			}
-		}
-		.human-test {
-			margin-left: 2%;
-			position: absolute;
-			top: 0;
-			right: 0;
-			
 		}
 	}
 	#hippocrate {
@@ -219,7 +176,7 @@
 		div>div {
 			float: none;
 			margin-top: 50px;
-			
+
 		}
 	}
 }
@@ -232,7 +189,7 @@
 			li {
 				a {
 					padding: 0 15px;
-					
+
 				}
 			}
 			li+li {
@@ -242,18 +199,18 @@
 	}
 	#pricing {
 		text-align: center;
-		
+
 		article {
 			margin: 0 3% 6%;
-			
+
 			li:first-child {
 				padding: 30px 0;
-						
+
 			}
 		}
 		article + article {
 			margin-left:3%;
-			
+
 		}
 	}
 	#clinic {
@@ -262,8 +219,8 @@
 				width: 50%;
 			}
 		}
-	}	
-}	
+	}
+}
 
 @media (max-width: 910px){
 	header {
@@ -301,14 +258,14 @@
 			position: absolute;
 			top: 100%;
 			background-color: #fff;
-			width: 100%; 
+			width: 100%;
 			float: none;
 			left: 0;
 			z-index: 5;
 			display: block;
 			border-top: 1px solid #f1f1f5;
 			border-bottom: 1px solid #f1f1f5;
-			max-height: 0;            
+			max-height: 0;
             overflow-y: hidden;
             -webkit-transition: max-height 0.3s ease-in-out;
             -moz-transition: max-height 0.3s ease-in-out;
@@ -320,7 +277,7 @@
 			li {
 				display: block;
 				text-align: center;
-				
+
 				a {
 					width: 100%;
 					@include lh(35px);
@@ -365,7 +322,7 @@
 				margin: 0 auto;
 				text-align: center;
 				margin-left: -45%;
-				
+
 			}
 			// .item {
 			// 	height: 400px;
@@ -384,7 +341,7 @@
 				    transform: translate(0,0);
 				}
 			}
-			
+
 		}
 		#mobile {
 			.details {
@@ -423,11 +380,11 @@
 				}
 	        	.about-icon1 {
 					background-position: 49% -132px;
-					
+
 				}
 				.about-icon2 {
 					background-position: 49% -399px;
-					
+
 				}
 				.about-icon3 {
 					background-position: 49% -675px;
@@ -446,24 +403,24 @@
 			}
 			li+li {
 				margin-top: 55px;
-				
+
 			}
 		}
 	}
 	#doctors {
 		.container {
 			padding: 0;
-			
+
 		}
 		.about-doctors {
 			text-align: center;
-			
+
 			.about-doc {
 				padding-bottom: 100px;
 				.close {
 					bottom: 40px;
 					margin-left: 0!important;
-					
+
 				}
 				>div {
 					float: none!important;
@@ -490,7 +447,7 @@
 		ul {
 			li {
 				margin-top: 0;
-				
+
 				article {
 					display: block;
 					width: 90%;
@@ -518,25 +475,25 @@
 	#pricing {
 		.container {
 			padding: 0!important;
-			
+
 		}
 		article {
 			margin-bottom: 30px;
-			
+
 		}
 	}
 	#clinic {
 		.container {
 			padding: 0!important;
-			
+
 		}
 		#menu-filter {
-			
+
 			li {
 				width: 260px;
 				display: block;
 				margin: 0 auto 10px;
-				
+
 			}
 		}
 		#grid {
@@ -547,11 +504,11 @@
 		.numbers {
 			ul {
 				padding: 0 5%;
-				
+
 			}
 		}
 	}
-	#main-appoitment {
+	.contact-form {
 		.select2 {
 			margin: 0 auto 10px;
 			width: 100%;
@@ -563,53 +520,6 @@
 				margin: 0 auto;
 				max-width: 480px;
 			}
-		}
-		.input {
-
-			label:nth-child(2n+1) {
-				margin: 0 auto;
-
-			}
-			label {
-				display: block;
-				width: 100%;
-				margin: 0 auto;
-				max-width: 480px;
-			}
-		}
-		.date {
-			display: block;
-			width: 100%;
-			margin: 0 auto;
-			max-width: 480px;
-			input {
-				display: block!important;
-				width: 100%!important;
-			}
-			a {
-				width: 100%!important;
-				margin-left: 0!important;
-				margin-top: 28px;
-				margin-bottom: 20px!important;
-				
-			}
-		}
-		.textarea {
-			>label {
-				display: block;
-				padding: 0;
-				max-width: 480px;
-				margin: 0 auto; 
-				float: none;
-			}
-			.human-test {
-				position: relative;
-				text-align: center;
-				max-width: 480px;
-				margin: 10px auto;
-				float: none!important;
-			}
-			
 		}
 	}
 	#description {
@@ -628,18 +538,11 @@
 		h5 {
 			font-size: 16px;
 			line-height: 1.5;
-			
-		}
-	} 
-}
 
-@media (max-width: 500px){ 
-	#main-appoitment {
-		// button {
-		// 	width: calc(100% - 20px)!important;
-		// }
+		}
 	}
 }
+
 @media (max-width: 450px){
 
 	#subheader {
@@ -656,7 +559,7 @@
 		.about-doctors {
 			.last {
 				text-align: center!important;
-				
+
 				a {
 					position: relative!important;
 					float: none!important;
@@ -667,7 +570,7 @@
 				}
 				.about-doc  {
 					a.close {
-						
+
 					}
 
 				}
@@ -678,7 +581,7 @@
 					width:auto;
 					span {
 						margin-left: 22%;
-						
+
 					}
 				}
 			}

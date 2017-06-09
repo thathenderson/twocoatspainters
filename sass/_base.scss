@@ -31,27 +31,6 @@ body {
         z-index: 9999999999;
         background: url('../images/preloader.gif') 50% 50% no-repeat #fff;
     }
-    // * {
-    //     -webkit-backface-visibility:hidden; /* Chrome and Safari */
-    // }
-    &.veterinary {
-        #preloader {
-            background: url('../images/preloader1.gif') 50% 50% no-repeat #fff;
-        }
-
-    }
-    &.pharm {
-        #preloader {
-            background: url('../images/preloader2.gif') 50% 50% no-repeat #fff;
-        }
-
-    }
-    &.dental {
-        #preloader {
-            background: url('../images/preloader3.gif') 50% 50% no-repeat #fff;
-        }
-
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
