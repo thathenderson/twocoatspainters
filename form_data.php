@@ -24,7 +24,7 @@
         "5" => "Exterior and Interior"
       ];
 
-      $service = $serviceMap[$rawService];
+      $service = $serviceArray[$rawService];
 
       $email_message = "Message from Twocoatspainters.com: \n\n";
 
