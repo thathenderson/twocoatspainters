@@ -120,7 +120,7 @@ $(document).ready( function () {
             name: $('#name').val(),
             lastname: $('#lastname').val(),
             phone: $('#phone').val(),
-            number: $('#address').val(),
+            address: $('#address').val(),
             date: $('#date').val(),
             mail: $('#mail').val(),
             message: $('#message').val(),
