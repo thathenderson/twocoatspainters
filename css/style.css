@@ -5819,8 +5819,8 @@ disabled look for disabled choices in the results dropdown
   line-height: 45px !important;
 }
 .textarea__human-test button.human-test__submit:hover {
-  border: 2px solid #0094CF;
-  background-color: #0094CF;
+  border: 2px solid #3b8d99;
+  background-color: #3b8d99;
 }
 
 @media (max-width: 450px) {
