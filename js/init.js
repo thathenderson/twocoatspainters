@@ -38,16 +38,18 @@ $(document).ready( function () {
     e.preventDefault();
   });
 
-  // var window_height = $(window).height() - 63;
-  //
-  // $('#subheader, #subheader #video').css('height', window_height  );
-  //
-  // //detect window resize
-  // $(window).on('resize', function() {
-  //   var window_height = $(window).height() - 63;
-  //
-  //   $('#subheader, #subheader #video').css('height', window_height  );
-  // }).trigger('resize');
+  var windowHeight = window.innerHeight - 50;
+  var subHeader = document.querySelector("#subheader");
+
+  if (subHeader) {
+    subHeader.style.height = windowHeight+"px";
+  }
+
+  //detect window resize
+  $(window).on('resize', function() {
+    var windowHeight = window.innerHeight - 50;
+    subHeader.style.height = windowHeight+"px";
+  }).trigger('resize');
 
 
   /*-------------------------------------------------*/
