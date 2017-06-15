@@ -4,18 +4,14 @@
 +
 -------------------------------------------------------------------------------------- */
 
-@import "compass/layout.scss";
-
 @include sticky-footer(auto, ".layout", ".layout_footer", "footer");
 main {
-	padding-top: 62px;
-
+	padding-top: 50px;
 }
 .container {
     margin: 0 auto;
     width: $page-width;
     min-width: $page-width;
-    padding: 0 30px;
     @include bs;
 }
 

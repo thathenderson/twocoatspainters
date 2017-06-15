@@ -13,7 +13,7 @@ textarea {
   color: $input-clr;
   background-color: $input-bgr;
   padding: 0 22px;
-  @include transition(all .4s ease);
+  transition: all .4s ease;
   @include radius;
   font-family: $base-font;
   font-size: $base-font-size;
@@ -28,7 +28,7 @@ textarea {
     border: 2px solid $main-clr;
   }
   &:invalid {
-    @include box-shadow(none);  /* fixes mozilla red outline (shadow) */
+    box-shadow: none;  /* fixes mozilla red outline (shadow) */
   }
 
   &.error {

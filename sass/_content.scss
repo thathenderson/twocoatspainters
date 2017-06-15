@@ -91,7 +91,7 @@
 	background-image: url("../images/slider1/arrow2.png");
 	background-color: rgba(0, 0, 0, 0.2);
 	background-position: 50% 50%;
-	@include opacity(1) ;
+	opacity: 1;
     bottom: 60px;
     display: none;
     position: fixed;
@@ -262,7 +262,7 @@
 			top: 0;
 			left: 0;
 			overflow: hidden;
-			@include transition(all .4s ease-in);
+			transition: all .4s ease-in;
 
 			.close {
 				position: absolute;
@@ -284,7 +284,7 @@
 				top: 0;
 				left: 0;
 				z-index: 100;
-				@include transition(all .4s ease-out .5s);
+				transition: all .4s ease-out .5s;
 
 			}
 			div:nth-child(2) {

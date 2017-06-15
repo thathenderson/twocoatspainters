@@ -84,8 +84,8 @@
 }
 
 @mixin cover {
-    @include background-size(cover);
-    -ms-behavior: url(../js/backgroundsize.htc);
+  background-size: cover;
+  -ms-behavior: url(../js/backgroundsize.htc);
 }
 
 /* Borders */
@@ -97,22 +97,22 @@
 
 @mixin radius {
     border-radius: $radius;
-    @include background-clip();
+    background-clip: padding-box;
 }
 
 @mixin circle {
     border-radius: 50%;
-    @include background-clip();
+    background-clip: padding-box;
 }
 
 @mixin curve($rad) {
     border-radius: $rad;
-    @include background-clip();
+    background-clip: padding-box;
 }
 
 @mixin borders {
     border-radius: $radius;
-    @include background-clip();
+    background-clip: padding-box;
     border: 1px solid $border;
 }
 
@@ -121,7 +121,7 @@
     @include trans;
 
     &:hover {
-        @include opacity($opac);
+        opacity: $opac;
     }
 }
 
@@ -145,19 +145,13 @@
 }
 
 @mixin fadeout {
-    visibility: hidden;
-    @include opacity(0);
-    @include t(.4s);
-    /* hack for ie8 */
-    opacity: 1\9;
-    visibility: visible\9;
-    display: none\9;
+  visibility: hidden;
+  opacity: 0;
+  @include t(.4s);
 }
 @mixin fadein {
-    visibility: visible;
-    @include opacity(1);
-    /* hacks for ie8 */
-    display: block\9;
+  visibility: visible;
+  opacity: 1;
 }
 
 @mixin tt($w1, $w2, $clr) {
@@ -188,12 +182,8 @@
 }
 
 /* BOX SIZING */
-@mixin box-sizing($bs) {
-  $bs: unquote($bs);
-  @include experimental(box-sizing, $bs, -moz, -webkit, not -o, not -ms, not -khtml, official);
-}
 @mixin bs {
-    @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 /* HIDE TEXT*/
@@ -203,6 +193,27 @@
     text-shadow: none;
     color: transparent;
     background-color: transparent;
+}
+
+@mixin sticky-footer($footer-height, $root-selector: unquote("#root"), $root-footer-selector: unquote("#root_footer"), $footer-selector: unquote("#footer")) {
+  html, body {
+    height: 100%;
+  }
+  #{$root-selector} {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -$footer-height;
+    #{$root-footer-selector} {
+      height: $footer-height;
+    }
+  }
+  #{$footer-selector} {
+    clear: both;
+    position: relative;
+    height: $footer-height;
+  }
 }
 
 
