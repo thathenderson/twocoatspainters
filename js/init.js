@@ -1,12 +1,3 @@
-
-/*-------------------------------------------------*/
-/* =  PRELOADER
-/*-------------------------------------------------*/
-
-$(window).load(function() {
-  $("#preloader").fadeOut("slow");
-});
-
 /*-------------------------------------------------*/
 /* =  NICE SCROLL
 /*-------------------------------------------------*/
@@ -14,7 +5,8 @@ $(window).load(function() {
 // $("html").niceScroll();
 
 $(document).ready( function () {
-
+  const preloader = document.querySelector(".preloader");
+  preloader.classList.add("preloader--hide");
 
   /*-------------------------------------------------*/
   /* =  INIT WATERMARK
@@ -46,16 +38,16 @@ $(document).ready( function () {
     e.preventDefault();
   });
 
-  var window_height = $(window).height() - 63;
-
-  $('#subheader, #subheader #video').css('height', window_height  );
-
-  //detect window resize
-  $(window).on('resize', function() {
-    var window_height = $(window).height() - 63;
-
-    $('#subheader, #subheader #video').css('height', window_height  );
-  }).trigger('resize');
+  // var window_height = $(window).height() - 63;
+  //
+  // $('#subheader, #subheader #video').css('height', window_height  );
+  //
+  // //detect window resize
+  // $(window).on('resize', function() {
+  //   var window_height = $(window).height() - 63;
+  //
+  //   $('#subheader, #subheader #video').css('height', window_height  );
+  // }).trigger('resize');
 
 
   /*-------------------------------------------------*/
@@ -71,22 +63,6 @@ $(document).ready( function () {
       to_top_icon.fadeOut('slow');
       }
   });
-
-  /*-------------------------------------------------*/
-  /* =  on resize run function
-  /*-------------------------------------------------*/
-
-  var tOut = false;
-  var milSec = 500;
-  $(window).resize(function(){
-   if(tOut !== false)
-      clearTimeout(tOut);
-   tOut = setTimeout(rsizeItems, milSec);
-  });
-  function rsizeItems() {
-      //put code inside this function
-  }
-
 
 
   /*-------------------------------------------------*/
