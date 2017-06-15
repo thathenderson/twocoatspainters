@@ -241,38 +241,55 @@
     }
     .item {
     .browse-images {
-      height: 100%!important;
+      // height: 100%!important;
       width: 100%!important;
       display: block;
       background-size: cover!important;
       background-position: 50% 50%!important;
     }
+    .main-app__cta {
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+      z-index:10;
+      text-align: center;
+    }
+
     .main-app {
       padding: 0 20px;
       @include lh(50px);
-      background-color: $fifth-clr;
+      background-color: $main-clr;
       font-family: $base-font;
       font-weight: 700;
       color: #fff;
       display: inline-block;
       @include radius;
-      position: absolute;
-      bottom: 50px;
-      left: 50%;
-      z-index:10;
-      margin-left: -100px;
       &:hover {
-        background-color: $main-clr;
+        background-color: $fourth-clr;
       }
     }
+
+    .main-slider__question {
+      display: block;
+      margin-top: 10px;
+
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+
+      &:hover {
+        color: $fourth-clr;
+      }
+    }
+
     .slide-header {
       width: 50%;
       margin-left: 25%;
       position: absolute;
-      bottom: 130px;
+      bottom: 110px;
       text-align: center;
       z-index:10;
-
     }
     h2 {
       font-weight: 500;
