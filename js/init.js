@@ -4,6 +4,16 @@
 
 // $("html").niceScroll();
 
+function toggleBookOnlineIframe() {
+  const bookOnlineIframe = document.getElementById("booking-widget-iframe");
+
+  if (bookOnlineIframe.getAttribute("src").length === 0) {
+    bookOnlineIframe.setAttribute("src", "https://twocoatspainters.launch27.com/?w");
+  } else {
+    bookOnlineIframe.setAttribute("src", "");
+  }
+}
+
 function toggleBookOnline(active) {
   const mainContent = document.querySelector(".content__main");
   const bookOnlineContent = document.querySelector(".content__book");
@@ -20,6 +30,8 @@ function toggleBookOnline(active) {
 
     window.scrollTo(0,0);
   }
+
+  toggleBookOnlineIframe();
 }
 
 $(document).ready( function () {
