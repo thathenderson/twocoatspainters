@@ -25,10 +25,14 @@ header  {
     flex-direction: row;
   }
 
+  &.header--book-online-active .container {
+    display: none;
+  }
+
 	img {
 		vertical-align: middle;
 	}
-	span {
+	.bars {
 		display: none;
 		cursor: pointer;
 		padding: 0 20px;
@@ -82,4 +86,34 @@ header  {
 header .header__logo {
   display: flex;
   align-items: center;
+}
+
+// Book Online header
+.header__book-online {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 165px;
+  color: $second-clr;
+
+  .header__logo {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .go-home span {
+    padding-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: $main-clr;
+  }
+}
+
+.header.header--book-online-active .header__book-online {
+  display: flex;
 }

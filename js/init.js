@@ -4,9 +4,39 @@
 
 // $("html").niceScroll();
 
+function toggleBookOnline(active) {
+  const mainContent = document.querySelector(".content__main");
+  const bookOnlineContent = document.querySelector(".content__book");
+  const header = document.querySelector(".header");
+
+  if (active) {
+    mainContent.classList.add("content__book--active");
+    bookOnlineContent.classList.add("content__book--active");
+    header.classList.add("header--book-online-active");
+  } else {
+    mainContent.classList.remove("content__book--active");
+    bookOnlineContent.classList.remove("content__book--active");
+    header.classList.remove("header--book-online-active");
+
+    window.scrollTo(0,0);
+  }
+}
+
 $(document).ready( function () {
   const preloader = document.querySelector(".preloader");
   preloader.classList.add("preloader--hide");
+
+  $("a[href='#book-online']").click(function(e) {
+    e.preventDefault();
+
+    toggleBookOnline(true);
+  });
+
+  $("a[href='#go-home']").click(function(e) {
+    e.preventDefault();
+
+    toggleBookOnline(false);
+  });
 
   /*-------------------------------------------------*/
   /* =  INIT WATERMARK
@@ -34,9 +64,9 @@ $(document).ready( function () {
   /* =  link disabled
   /*-------------------------------------------------*/
 
-  $('header ul li a').on("click", function(e){
-    e.preventDefault();
-  });
+  // $('header ul li a').on("click", function(e){
+  //   e.preventDefault();
+  // });
 
   var windowHeight = window.innerHeight - 50;
   var subHeader = document.querySelector("#subheader");
@@ -71,7 +101,6 @@ $(document).ready( function () {
   /* =  CONTACT FORM
   /*-------------------------------------------------*/
 
-  var top_ofset = $('header').height() - 1;
   var word = ['one', 'two', 'three', 'four', 'five'];
   var rand = (Math.floor(Math.random() * 4));
   var correct = word[rand];
@@ -154,11 +183,11 @@ $(document).ready( function () {
     /*-------------------------------------------------*/
 
     $('.logo,header li a, .get-estimate, .close, #top').smoothScroll({
-      offset: - top_ofset,
+      offset: -50,
       // one of 'top' or 'left'
       direction: 'top',
-      // only use if you want to override default behavior
-      scrollTarget: null,
+      // // only use if you want to override default behavior
+      // scrollTarget: null,
       // fn(opts) function to be called before scrolling occurs.
       // `this` is the element(s) being scrolled
       beforeScroll: function() {},

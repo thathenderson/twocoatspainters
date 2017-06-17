@@ -3,7 +3,38 @@
 + MAIN
 +
 -------------------------------------------------------------------------------------- */
+.content__main {
+  display: block;
+  &.content__book--active {
+    display: none;
+  }
+}
 
+.content__book {
+  display: none;
+  &.content__book--active {
+    display: block;
+  }
+
+  h1 {
+    margin: 30px 0 80px 0;
+    color: $second-clr;
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 73px;
+      left: 50%;
+      margin-left: -30px;
+      width: 60px;
+      height: 1px;
+      background-color: $second-clr;
+    }
+  }
+}
 
 /*************************************
 **************************************
