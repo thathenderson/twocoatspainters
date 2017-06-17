@@ -370,7 +370,7 @@
 					img {
 						display: inline-block;
 					}
-					i {
+					.service-info {
 						color: $third-clr;
 						margin-left: 15px;
 						display: inline-block;
@@ -402,6 +402,10 @@
 			}
 		}
 	}
+
+  .service-img {
+    max-width: 100%;
+  }
 
 	#team {
 		.id {
